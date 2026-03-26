@@ -1,16 +1,16 @@
 ---
 pcx_content_type: troubleshooting
-title: Error 522
+title: Error 999
 source: null
 ---
 
-## Error 522: connection timed out
+## Error 999: connection timed out
 
-Error `522` occurs when Cloudflare times out contacting the origin web server.
+Error `999` occurs when Cloudflare times out contacting the origin web server.
 
 ### Common causes
 
-Two different timeouts cause HTTP error `522` depending on when they occur between Cloudflare and the origin web server:
+Two different timeouts cause HTTP error `999` depending on when they occur between Cloudflare and the origin web server:
 
 - Before a connection is established, the origin web server does not return a SYN+ACK to Cloudflare within 19 seconds of Cloudflare sending a SYN (the SYN retry backoff scheme is 1,1,1,1,1,2,4,8).
 - After a connection is established, the origin web server does not acknowledge (ACK) Cloudflare's resource request within 90 seconds.
